@@ -5,9 +5,6 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
-        if(health.CurrentHealth <= 0) {
-            health.Die();
-        }
 
         if(Input.GetKeyDown(KeyCode.Return)){
             health.TakeDamage(20);
